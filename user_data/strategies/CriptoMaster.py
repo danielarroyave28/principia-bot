@@ -5,6 +5,7 @@
 import numpy as np  # noqa
 import pandas as pd  # noqa
 from pandas import DataFrame
+from datetime import datetime
 from typing import Optional, Union
 
 from freqtrade.strategy import (BooleanParameter, CategoricalParameter, DecimalParameter,
@@ -72,7 +73,7 @@ class CriptoMasterHibrida(IStrategy):
 
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 30
+    startup_candle_count: int = 5
 
     # Optional order type mapping.
     order_types = {
@@ -144,8 +145,8 @@ class CriptoMasterHibrida(IStrategy):
         smoothD = 3
         SmoothK = 3
         stochrsi  = (dataframe['rsi'] - dataframe['rsi'].rolling(period).min()) / (dataframe['rsi'].rolling(period).max() - dataframe['rsi'].rolling(period).min())
-        dataframe['srsi_k'] = stochrsi.rolling(SmoothK).mean() * 100
-        dataframe['srsi_d'] = dataframe['srsi_k'].rolling(smoothD).mean()
+        dataframe['fastk_rsi'] = stochrsi.rolling(SmoothK).mean() * 100
+        dataframe['fastd_rsi'] = dataframe['fastk_rsi'].rolling(smoothD).mean()
 
         # MACD
         macd = ta.MACD(dataframe)
@@ -157,8 +158,8 @@ class CriptoMasterHibrida(IStrategy):
         dataframe['mfi'] = ta.MFI(dataframe, timeperiod = 12)
 
     
-
         return dataframe
+    
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
         """
@@ -202,3 +203,4 @@ class CriptoMasterHibrida(IStrategy):
             'exit_long'] = 1
 
        
+        return dataframe
