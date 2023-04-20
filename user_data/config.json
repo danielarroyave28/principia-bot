@@ -93,7 +93,7 @@
         "username": "principia",
         "password": "principia1234"
     },
-    "bot_name": "freqtrade",
+    "bot_name": "principia-bot",
     "initial_state": "running",
     "force_entry_enable": false,
     "internals": {
