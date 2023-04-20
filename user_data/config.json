@@ -5,7 +5,7 @@
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "dry_run": false,
+    "dry_run": true,
     "dry_run_wallet": 10000,
     "cancel_open_orders_on_exit": false,
     "trading_mode": "spot",
@@ -33,8 +33,8 @@
     },
     "exchange": {
         "name": "binance",
-        "key": "HqYFHE4R56d3C11uNGC5qMYAayfySTATrktLSSYlMPle2ChBRvayo29U20siiLNn",
-        "secret": "rsj3Kx9sI5pjwuHk6JHMxyIsUXQiToXnMyrbukfLH7SDJSnoQbeokOCMdsYALTTH",
+        "key": "kUUJxx23tdIKcFoflYHx1m27O1y0ODG8z93diakaE16S84rAO1JzXWgPG0PXOVcT",
+        "secret": "kwmLULqIeujywcimNQFtHHZnwiW33ICtfUjcPgKkYCHxVS1rZydbImhD5evtcyhX",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
@@ -77,9 +77,9 @@
         }
     ],
     "telegram": {
-        "enabled": true,
-        "token": "6038560128:AAGuP_x-TeQCYZIWdowgovw5H38kD2SaGX0",
-        "chat_id": "-1001685072204"
+        "enabled": false,
+        "token": "5600449550:AAFFKCrabYjMQuMqbRcYzGiQzhcSA8x5eRs",
+        "chat_id": "1665789680"
     },
     "api_server": {
         "enabled": false,
@@ -90,10 +90,10 @@
         "jwt_secret_key": "f5e63af398b936c480bd347f0158df642d2467645b4e784e04bebe20ee47bc9b",
         "ws_token": "JYunKsJ1rnIAegXD_ZmAzLrRLKt9S1YKxQ",
         "CORS_origins": [],
-        "username": "principia",
-        "password": "principia1234"
+        "username": "mohammed",
+        "password": "mohammed1234"
     },
-    "bot_name": "freqtrade",
+    "bot_name": "mohammed-bot",
     "initial_state": "running",
     "force_entry_enable": false,
     "internals": {
