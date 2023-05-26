@@ -41,6 +41,12 @@
 
         ],
         "pair_blacklist": [
+
+            "USDC/USDT",
+            "BUSD/USDT",
+            "TUSD/USDT",
+            "USDP/USDT"
+            
             
         ]
     },
@@ -54,7 +60,7 @@
 
         },
 
-        {"method": "AgeFilter", "min_days_listed": 30}
+        {"method": "AgeFilter", "min_days_listed": 120}
 
     ],
     "telegram": {
