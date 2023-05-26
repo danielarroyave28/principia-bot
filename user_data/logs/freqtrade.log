@@ -30961,3 +30961,99 @@ Traceback (most recent call last):
   File "/freqtrade/freqtrade/exchange/exchange.py", line 520, in validate_stakecurrency
     raise OperationalException(
 freqtrade.exceptions.OperationalException: Could not load markets, therefore cannot start. Please investigate the above error for more details.
+2023-05-26 18:14:04,764 - freqtrade.loggers - INFO - Verbosity set to 0
+2023-05-26 18:14:04,766 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2023-05-26 18:14:04,767 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2023-05-26 18:14:04,768 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2023-05-26 18:14:04,769 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2023-05-26 18:14:04,771 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2023-05-26 18:14:04,870 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2023-05-26 18:14:04,872 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2023-05-26 18:14:04,874 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2023-05-26 18:14:04,891 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2023-05-26 18:14:04,892 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2023-05-26 18:14:04,971 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CriptoMasterHibrida from '/freqtrade/user_data/strategies/CriptoMaster.py'...
+2023-05-26 18:14:04,973 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2023-05-26 18:14:04,974 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2023-05-26 18:14:04,975 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2023-05-26 18:14:04,976 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2023-05-26 18:14:04,977 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2023-05-26 18:14:04,978 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 100}
+2023-05-26 18:14:04,978 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1d
+2023-05-26 18:14:04,979 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.347
+2023-05-26 18:14:04,980 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2023-05-26 18:14:04,981 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2023-05-26 18:14:04,981 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2023-05-26 18:14:04,982 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2023-05-26 18:14:04,983 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2023-05-26 18:14:04,983 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2023-05-26 18:14:04,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2023-05-26 18:14:04,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2023-05-26 18:14:04,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2023-05-26 18:14:04,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2023-05-26 18:14:04,987 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 5
+2023-05-26 18:14:04,988 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2023-05-26 18:14:04,989 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2023-05-26 18:14:04,989 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2023-05-26 18:14:04,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2023-05-26 18:14:04,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2023-05-26 18:14:04,992 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2023-05-26 18:14:04,992 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2023-05-26 18:14:04,993 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2023-05-26 18:14:04,994 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2023-05-26 18:14:04,995 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2023-05-26 18:14:04,995 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2023-05-26 18:14:05,002 - freqtrade.exchange.exchange - INFO - Using CCXT 3.0.37
+2023-05-26 18:14:05,034 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2023-05-26 18:14:05,460 - freqtrade.exchange.exchange - ERROR - Unable to initialize markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 625, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error:  for url: https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1685124845035&recvWindow=10000&signature=548a4787ff4479fb3c639fb63652f0bf9e1a60952279dbd2d5722d6f927b6082
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 485, in _load_markets
+    self._markets = self._api.load_markets(params={})
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 1457, in load_markets
+    currencies = self.fetch_currencies()
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/binance.py", line 1625, in fetch_currencies
+    response = self.sapiGetCapitalConfigGetall(params)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 505, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/binance.py", line 6923, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 2929, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 641, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/binance.py", line 6901, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/ccxt/base/exchange.py", line 3238, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.AuthenticationError: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+2023-05-26 18:14:05,465 - freqtrade.commands.trade_commands - ERROR - Could not load markets, therefore cannot start. Please investigate the above error for more details.
+2023-05-26 18:14:05,466 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 70, in __init__
+    self.exchange = ExchangeResolver.load_exchange(
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 34, in load_exchange
+    exchange = ExchangeResolver._load_exchange(
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 60, in _load_exchange
+    exchange = ex_class(**kwargs)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 185, in __init__
+    self.validate_config(config)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 218, in validate_config
+    self.validate_stakecurrency(config['stake_currency'])
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 520, in validate_stakecurrency
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Could not load markets, therefore cannot start. Please investigate the above error for more details.
