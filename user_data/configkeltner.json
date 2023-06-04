@@ -60,7 +60,15 @@
 
         },
 
-        {"method": "AgeFilter", "min_days_listed": 120}
+        {"method": "AgeFilter", "min_days_listed": 120},
+
+        {
+            "method": "RangeStabilityFilter",
+            "lookback_days": 10,
+            "min_rate_of_change": 0.02,
+            "max_rate_of_change": 0.5,
+            "refresh_period": 1440
+        }
 
     ],
     "telegram": {
