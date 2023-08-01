@@ -62,7 +62,8 @@
             "SAND/USDT",
             "MANA/USDT",
             "FTM/USDT",
-            "AAVE/USDT"
+            "AAVE/USDT",
+            "DOGE/USDT"
 
         ],
         "pair_blacklist": [

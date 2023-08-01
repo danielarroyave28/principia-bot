@@ -51,25 +51,31 @@
         ]
     },
     "pairlists": [
-
-        {
-           "method": "VolumePairList",
-           "number_assets": 30,
-           "sort_key": "quoteVolume",
-           "refresh_period": 1800
-
-        },
-
-        {"method": "AgeFilter", "min_days_listed": 120},
-
-        {
-            "method": "RangeStabilityFilter",
-            "lookback_days": 10,
-            "min_rate_of_change": 0.02,
-            "max_rate_of_change": 0.5,
-            "refresh_period": 1440
-        }
-
+            "ETH/USDT",
+            "BTC/USDT",
+            "ADA/USDT",
+            "BNB/USDT",
+            "SOL/USDT",
+            "DOT/USDT",
+            "XRP/USDT",
+            "MATIC/USDT",
+            "LTC/USDT",
+            "AVAX/USDT",
+            "LINK/USDT",
+            "ATOM/USDT",
+            "UNI/USDT",
+            "XMR/USDT",
+            "TRX/USDT",
+            "ALGO/USDT",
+            "FET/USDT",
+            "OCEAN/USDT",
+            "EGLD/USDT",
+            "NEAR/USDT",
+            "FIL/USDT",
+            "SAND/USDT",
+            "MANA/USDT",
+            "FTM/USDT",
+            "AAVE/USDT"
     ],
     "telegram": {
         "enabled": true,
