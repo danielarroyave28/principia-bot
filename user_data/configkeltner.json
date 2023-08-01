@@ -38,19 +38,6 @@
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
-
-        ],
-        "pair_blacklist": [
-
-            "USDC/USDT",
-            "BUSD/USDT",
-            "TUSD/USDT",
-            "USDP/USDT"
-            
-            
-        ]
-    },
-    "pairlists": [
             "ETH/USDT",
             "BTC/USDT",
             "ADA/USDT",
@@ -75,7 +62,24 @@
             "SAND/USDT",
             "MANA/USDT",
             "FTM/USDT",
-            "AAVE/USDT"
+            "AAVE/USDT",
+            "RNDR/USDT"
+        ],
+        "pair_blacklist": [
+
+            "USDC/USDT",
+            "BUSD/USDT",
+            "TUSD/USDT",
+            "USDP/USDT"
+            
+            
+        ]
+    },
+    "pairlists": [
+          {
+           "method": "StaticPairList"
+
+        }
     ],
     "telegram": {
         "enabled": true,
